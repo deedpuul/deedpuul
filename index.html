@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <! __ linking Google fonst for icons ->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- SEarch section-->
+      <div class="search-section">
+        <div class="input-wrapper">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            type="search"
+            placeholder="Enter a city name"
+            class="search-input"
+          />
+        </div>
+        <button class="location-button">
+          <span class="material-symbols-outlined"> my_location </span>
+        </button>
+      </div>
+
+      <!-- No results message-->
+      <div class="no-results">
+        <img src="no-result.svg" alt="error" class="weather-icon" />
+        <h3 class="title">Something went wrong!</h3>
+        <p class="message">
+          We're unable to retrieve the weather details . Ensure you've entered a
+          valid city or try again later.
+        </p>
+      </div>
+
+      <!-- weather -section-->
+      <div class="weather-section">
+        <!--Current weather-->
+        <div class="current-weather">
+          <img src="clouds.svg" alt="error" class="weather-icon" />
+          <h2 class="temprature">00<span>°C</span></h2>
+          <p class="description">Weather description</p>
+        </div>
+        <!--Hourly  weather forecast list-->
+        <div class="hourly-weather">
+          <ul class="weather-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
